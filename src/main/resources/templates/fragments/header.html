@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+	<header class="header-container">
+		<img src="/images/klu-login-banner.jpg" alt="KLU Student Record Management" class="header-banner">
+		<div class="logged-user" th:if="${showUserInfo}">
+			<div style="margin-left:45% ;"><i class="bi bi-person-circle" style="font-size: 34px;"></i></div>
+			<div>Lahari Namala (Admin)</div>
+			<div style="margin: 0% 0% 5% 40%;"><a th:href="@{/}" style="color: white;">
+					<i class="bi-box-arrow-right"></i> Logout
+				</a></div>
+		</div>
+	</header>
+
+
+</body>
+
+</html>
